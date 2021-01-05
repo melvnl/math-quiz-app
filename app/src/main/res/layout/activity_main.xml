@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F3F6"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_viewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_play"
+            android:padding="10sp"
+            android:onClick="ViewScoreOnClick"
+            android:text="@string/view_score"
+            android:textColor="#340061"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Score:"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_firstNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_operator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_secondNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" = "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text=""
+                android:textSize="50sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:textSize="@dimen/quizNumberTextSize"
+            android:text="1"
+            android:onClick="OneOnClick"
+            android:layout_margin="@dimen/buttonMargin"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:text="2"
+                android:onClick="TwoOnClick"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:layout_margin="@dimen/buttonMargin"/>
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:text="3"
+                android:onClick="ThreeOnClick"
+                android:layout_margin="@dimen/buttonMargin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:text="4"
+                android:onClick="FourOnClick"
+                android:layout_margin="@dimen/buttonMargin"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:text="5"
+                android:onClick="FiveOnClick"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:layout_margin="@dimen/buttonMargin"/>
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:text="6"
+                android:onClick="SixOnClick"
+                android:layout_margin="@dimen/buttonMargin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:text="7"
+                android:onClick="SevenOnClick"
+                android:layout_margin="@dimen/buttonMargin"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:text="8"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:onClick="EightOnClick"
+                android:layout_margin="@dimen/buttonMargin"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:text="9"
+                android:onClick="NineOnClick"
+                android:layout_margin="@dimen/buttonMargin"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/quizButtonTextSize"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/buttonMargin"
+                android:backgroundTint="@color/colorSecondary"
+                android:onClick="DeleteOnClick"
+                android:text="DELETE"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:layout_margin="@dimen/buttonMargin"
+                android:textSize="@dimen/quizNumberTextSize"
+                android:onClick="ZeroOnClick"
+                android:text="0"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:textSize="@dimen/quizButtonTextSize"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="SubmitOnClick"
+                android:text="SUBMIT"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
